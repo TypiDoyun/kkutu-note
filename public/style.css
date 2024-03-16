@@ -1,0 +1,56 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 35px;
+
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+
+    background-color: rgb(255, 255, 255);
+}
+
+#setting {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+input[type="checkbox"] {
+    padding: 0;
+}
+
+label {
+    user-select: none;
+}
+
+#search {
+    width: 30vw;
+    height: 35px;
+    padding: 0 10px;
+
+    border: 1px solid white;
+    border-radius: 5px;
+
+    outline: black solid 1px;
+    caret-color: black;
+    background-color: rgb(250, 250, 250);
+}
+
+#results {
+    height: 20vh;
+}
+
+#words {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+}

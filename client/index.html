@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Kkutu Note</title>
+</head>
+<body>
+    <div id="setting">
+        <div>
+            <input type="checkbox" id="manner">
+            <label for="manner">매너 모드</label>
+        </div>
+        <div>
+            <input type="checkbox" id="long" checked>
+            <label for="long">긴단어 우선</label>
+        </div>
+    </div>
+    <input type="text" id="search" autocomplete="off">
+    <div id="results">
+        <ol id="words">
+        </ol>
+    </div>
+    
+    <script src="./index.js"></script>
+</body>
+</html>
