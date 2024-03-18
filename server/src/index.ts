@@ -98,12 +98,12 @@ app.get("/get", async (request, response) => {
         organize();
     } catch {
         response.send({
-            state: "Error"     
+            isSuccess: false   
         });
         return;
     }
     response.send({
-        state: "Success",
+        isSuccess: true,
         result: wordMap
     });
 });
