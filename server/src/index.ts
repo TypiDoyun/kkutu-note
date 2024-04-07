@@ -93,8 +93,10 @@ app.get("/get", async (request, response) => {
     if (request.method !== "GET") return;
 
     try {
-        await getLongWord();
-        await getAttackWord();
+        await Promise.all([
+            getLongWord(),
+            getAttackWord()
+        ]) ;
         organize();
     } catch {
         response.send({
