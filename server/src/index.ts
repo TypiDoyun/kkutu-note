@@ -13,12 +13,6 @@ app.get("/", (request, response) => {
     response.sendFile(path.join(__dirname, "../../client/index.html"));
 });
 
-const getTextContent = (element: cheerio.Cheerio) => {
-    return element.contents().filter((_, item) => {
-        return item.type === "text"
-    }).text();
-}
-
 const organize = () => {
     const killWords: Set<String> = new Set();
 
